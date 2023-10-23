@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้า</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("./pig/bg1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .form-group {
+            background-color: rgba(235, 235, 235, 0.5);
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit {
+            text-align: center;
+            font-size: x-large;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div class="container">
+        <form id="product-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <h1>สินค้า</h1>
+                <label for="product-name">รหัสสินค้า:</label>
+                <input type="text" class="form-control" id="product-name" required>
+            </div>
+            <div class="form-group">
+                <label for="product-price">ราคา:</label>
+                <input type="number" class="form-control" id="product-price" required>
+            </div>
+            <div class="form-group">
+                <label for="product-image">รูปภาพสินค้าที่ต้องการ:</label>
+                <input type="file" class="form-control-file" id="product-image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="add">ที่อยู่:</label>
+                <input type="text" class="form-control" id="add" required>
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn btn-primary">บันทึก</button>
+                <a class="btn btn-primary" href="index.html">หน้าหลัก</a>
+                <a class="btn btn-primary" href="/contact.html">ติดต่อเรา</a>
+            </div>
+        </form>
+    </div>
+
+
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close" id="close-popup">&times;</span>
+        <p>Thank you, your product has been added successfully!</p>
+    </div>
+</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="create_product.js"></script>
+   
+    
+
+<script>
+    
+   
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ขายของมือสอง</title>
+    <!-- เรียกใช้ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+   
+    <style>
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+     
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        background-color: #007BFF;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    .box {
+      font-size: 19px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-style: italic;
+        background-color: #abe4fc;
+        border: 7px dotted #4f4230;
+        width: 100%;
+        height: 200px;
+        color: black;
+        text-align: center;
+      
+    }
+
+    .สินค้า, .สินค้า2 {
+        text-align: center;
+        border: 4px solid #31c9f3;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 10px;
+        background-color: rgb(12, 62, 112);
+    }
+
+    .JPG1, .JPG2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 10px;
+        width: 15rem;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        background-color: #007BFF;
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+
+
+    
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  
+  }
+
+    </style>
+</head>
+<body>
+    
+
+<body
+    
+       
+        class="bg d-flex h-150 text-center text-bg-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        <div id="extwaiokist" style="display:none" v="kmiah" q="4c4f6e1e" c="1094." i="1107" u="1.209" s="09112320" sg="svr_09102316-ga_09112320-bai_09282317" d="1" w="false" e="" a="2" m="BMe="><div id="extwaigglbit" style="display:none" v="kmiah" q="4c4f6e1e" c="1094." i="1107" u="1.209" s="09112320" sg="svr_09102316-ga_09112320-bai_09282317" d="1" w="false" e="" a="2" m="BMe="></div></div></div>
+    
+        
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <a class="float-md-start mb-1 product btn btn-lg btn-light fw-bold border-white bg-white" href="index.html" >Welcome!!</a>
+          <p></p>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            
+           
+            <a class="product  btn btn-lg btn-light fw-bold border-white bg-white" href="create_product.html">สินค้าที่คุณสนใจ</a>
+            <a class="login btn btn-lg btn-light fw-bold border-white bg-white" href="contact.html">ติดต่อเรา</a>
+          </nav>
+        </div>
+      </header>
+    
+      <main class="px-3">
+        <h1>ยินดีต้อนรับ</h1>
+        <p class="lead"> สิ่งเหล่านี้คือสิ่งของที่เก็บสะสมไว้เป็นเวลานาน ซึ่งไม่ได้มีประโยชน์กับฉันแล้ว แต่อาจจะมีประโยชน์กับผู้อื่น  โดยที่สิ่งของเหล่านี้จะขายในราคามิตรภาพ และบางอย่างก็แจกฟรี  ขอให้ทุกคนมีความสุขกับสิ่งของที่ฉันอยากจะมอบให้ค่ะ</p>
+        </p>
+        <p class ="container">
+            <div class="d-grid gap-2">
+              <p class="btn btn-primary" >สิ่งของที่มอบให้คุณ</p>
+            </div>
+            <p></p>
+           
+              <div2>
+                <div class="box">
+                  <p class="001">กฏของเรา</p>
+                  <p class="001">เรามีสินขายที่อยากขายและแจกฟรี รายการสินค้าจะใส่เป็นรหัสไว้  เมื่อคุณต้องการสินค้าคุณสามารถกดปุ่ม "GO" เพื่อใส่รหัสสินค้า และ แคปรูปและอัพโหลดให้ทางเรา จากนั้นใส่ราคา ที่อยู่จัดส่ง อีเมล และกดปุ่ม "บันทึก" หากคุณใส่ข้อมูลผิดพลาด และเมื่อมีปัญหาโปรส่งข้อมูลไปยังที่ "ติดต่อเรา"</p> 
+                </div>
+                  </div2>
+                  <p></p>
+                      <div3>
+                        <p class="สินค้า" > ในส่วนของสินค้าที่ขาย</p>
+
+                        <div4>
+                        <div class="JPG1">
+                          <div class="card col-md-4" style="width: 15rem;">
+                            <img src="./pig/1.jpg" class="card-img-top col-md-4" alt="A001">
+                              <a href="./create_product.html" class="btn btn-primary">Go </a>
+                            </div>
+                            <div class="card col-md-4" style="width: 15rem;">
+                              <img src="./pig/2.jpg" class="card-img-top col-md-4" alt="A002">
+                                <a href="./create_product.html" class="btn btn-primary">Go</a>
+                              </div>
+                              <div class="card col-md-4" style="width: 15rem;">
+                                <img src="./pig/3.jpg" class="card-img-top col-md-4" alt="A003">
+                                  <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                </div>
+                                <div class="card col-md-4" style="width: 15rem;">
+                                  <img src="./pig/4.jpg" class="card-img-top col-md-4" alt="A004">
+                                    <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                  </div>
+                                  <div class="card col-md-4" style="width: 15rem;">
+                                    <img src="./pig/5.jpg" class="card-img-top col-md-4" alt="A005">
+                                      <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                    </div>
+                                    <div class="card col-md-4" style="width: 15rem;">
+                                      <img src="./pig/6.jpg" class="card-img-top col-md-4" alt="A006">
+                                        <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                      </div>
+                                      <div class="card col-md-4" style="width: 15rem;">
+                                        <img src="./pig/7.jpg" class="card-img-top col-md-4" alt="A007">
+                                          <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                        </div>
+                                        <div class="card col-md-4" style="width: 15rem;">
+                                          <img src="./pig/8.jpg" class="card-img-top col-md-4" alt="A008">
+                                            <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                          </div>
+                                          <div class="card col-md-4" style="width: 15rem;">
+                                            <img src="./pig/9.jpg" class="card-img-top col-md-4" alt="A009">
+                                              <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                            </div>
+                                            <div class="card col-md-4" style="width: 15rem;">
+                                              <img src="./pig/10.jpg" class="card-img-top col-md-4" alt="A010">
+                                                <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                              </div>
+                                              
+                                                
+                                                  </div>
+                                                   </div3>
+                                                          <div4>
+                                                            <p class="สินค้า2" > ในส่วนของสินค้าที่มอบให้</p>
+                                                            <div class="JPG2">
+
+                                                            <div class="card col-md-4" style="width: 15rem;">
+                                                              <img src="./pig/12.jpg" class="card-img-top col-md-4" alt="B01">
+                                                                <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                              </div>
+                                                              <div class="card col-md-4" style="width: 15rem;">
+                                                                <img src="./pig/13.jpg" class="card-img-top col-md-4" alt="B02">
+                                                                  <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                                </div>
+                                                                <div class="card col-md-4" style="width: 15rem;">
+                                                                  <img src="./pig/14.jpg" class="card-img-top col-md-4" alt="B03">
+                                                                    <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                                  </div>
+                                                                  <div class="card col-md-4" style="width: 15rem;">
+                                                                    <img src="./pig/15.jpg" class="card-img-top col-md-4" alt="B04">
+                                                                      <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                                    </div>
+                                                                    <div class="card col-md-4" style="width: 15rem;">
+                                                                      <img src="./pig/16.jpg" class="card-img-top col-md-4" alt="B05">
+                                                                        <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                                      </div>
+                                                                      <div class="card col-md-4" style="width: 15rem;">
+                                                                        <img src="./pig/17.jpg" class="card-img-top col-md-4" alt="B06">
+                                                                          <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                                        </div>
+                                                                        <div class="card col-md-4" style="width: 15rem;">
+                                                                          <img src="./pig/18.jpg" class="card-img-top col-md-4" alt="B07">
+                                                                            <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                                          </div>
+                                                                          <div class="card col-md-4" style="width: 15rem;">
+                                                                            <img src="./pig/19.jpg" class="card-img-top col-md-4" alt="B09">
+                                                                              <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                                            </div>
+                                                                            <div class="card col-md-4" style="width: 15rem;">
+                                                                              <img src="./pig/20.jpg" class="card-img-top col-md-4" alt="B10">
+                                                                                <a href="./create_product.html" class="btn btn-primary">Go </a>
+                                                                              </div>
+                                                                              
+                                                            </div>
+                                                          </div4>
+                                          </class>
+
+                                        </main>
+
+      
+
+
+
+
+
+
+    </body>
+     
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="create_product.js"></script>
+<script src="product_creator.js"></script>
+<script src="index.js"></script>
+
+
+<footer class="mt-auto text-white-50">
+    <p>web for hand on  by <a href="https://github.com/UnUneU" class="text-white">NISARAT</a>.</p>
+  </footer>
+</div>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+
+</script>
+
+</html>
